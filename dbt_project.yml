@@ -24,3 +24,6 @@ models:
       materialized: table
       staging:
         materialized: view
+
+on-run-start: select 3
+on-run-end: select 4
