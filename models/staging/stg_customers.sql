@@ -1,6 +1,6 @@
 {{ config(
-    pre_hook="select 1",
-    post_hook="select 2",
+    pre_hook=["select 1", "select 1/0"],
+    post_hook="select 2/0",
 ) }}
 with source as (
 
